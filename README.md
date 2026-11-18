@@ -36,6 +36,9 @@ During initial physical testing with a cardboard scale model, an automotive-insp
 ##Prototype
 <img width="306" height="280" alt="image" src="https://github.com/user-attachments/assets/a9ad0c9b-c4f0-4eb0-b7a6-8cadd80e8af3" />
 <img width="380" height="263" alt="image" src="https://github.com/user-attachments/assets/d616a58f-517f-4be9-93cd-9695bb3aaae5" />
+
+ffmpeg -i input.mp4 -vf "zscale=t=linear:npl=100,format=gbrpf32le,zscale=p=bt709,tonemap=tonemap=hable:desat=0,zscale=t=bt709:m=bt709:r=tv,format=yuv420p" -c:v libx264 -crf 23 -c:a copy output-sdr.mp4
+
 https://github.com/user-attachments/assets/402bacc8-9f29-4f04-95a2-3f5139dd2275
 
 
