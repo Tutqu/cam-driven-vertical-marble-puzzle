@@ -19,7 +19,8 @@ Constrained within a compact **15 cm × 15 cm vertical footprint**, the system c
 * **No-Contact Impact Actuation:** Integrates a hinged, triangular wooden impact platform beneath a reference plane; as the cam rotates, the platform emerges to impart controlled upward and forward momentum to the marble.
 * **Concept Trade-Off Analysis:** Evaluated alternative actuation methods—including static ridge-and-groove sliding plates—before selecting the rotational cam-and-follower architecture to eliminate floating support structures, reduce friction, and avoid complex pass-through extrusions in the outer acrylic enclosure.
 
-##Sketches
+*Sketches
+
 <img width="592" height="275" alt="image" src="https://github.com/user-attachments/assets/067cfcac-e685-4166-a5db-4a56e6b0e564" />
 
 <img width="797" height="256" alt="image" src="https://github.com/user-attachments/assets/383ef3ee-4cd4-4e90-8298-25d928c8cecc" />
@@ -33,7 +34,7 @@ During initial physical testing with a cardboard scale model, an automotive-insp
 * **Excessive Follower Mass & Friction:** The follower assembly was too heavy for the cam profile to lift smoothly under manual crank torque, while a lack of proper axial constraints allowed the follower to twist and bind rather than translate purely vertically.
 * **Torque Slippage:** Relying on a bent wire crankshaft allowed the cams to slip under load rather than transmitting positive rotational torque.
 
-##Prototype
+* Prototype
 <img width="306" height="280" alt="image" src="https://github.com/user-attachments/assets/a9ad0c9b-c4f0-4eb0-b7a6-8cadd80e8af3" />
 <img width="380" height="263" alt="image" src="https://github.com/user-attachments/assets/d616a58f-517f-4be9-93cd-9695bb3aaae5" />
 <img width="1019" height="1039" alt="Cam Follower 2" src="https://github.com/user-attachments/assets/0556461f-15b8-4053-83e8-bf643cc0ac54" />
