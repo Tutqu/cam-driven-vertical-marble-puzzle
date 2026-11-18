@@ -6,27 +6,38 @@ Cam-and-follower mechanism design and iterative prototyping for a vertical STEM 
 # The Conundrum Column: Vertical Mechanical Marble Puzzle
 
 ## Project Overview
-Developed for **ME100: Introduction to Mechanical Engineering Practice I** at the University of Waterloo (October – Present), **The Conundrum Column** is a STEM-focused educational toy designed to foster cognitive development, problem-solving, and fine motor skills in young children. 
+Engineered for **ME100: Introduction to Mechanical Engineering Practice I** at the University of Waterloo (October – Present), **The Conundrum Column** is an interactive STEM mechanical puzzle designed to develop spatial reasoning and fine motor skills in young children. 
 
-Users must navigate a marble from the base of a 15 cm × 15 cm vertical tower to the top using only exterior mechanical controls—such as cranks, levers, buttons, and pull strings—without ever making direct physical contact with the marble.
+Constrained within a compact **15 cm × 15 cm vertical footprint**, the system challenges users to transport a marble from the base of the tower to the top exit exclusively through exterior mechanical interfaces—cranks, levers, buttons, and pull strings—without direct physical contact with the marble.
 
-**Subsystem Scope:** This repository specifically documents the **Cam-and-Follower Actuation Sublevel**, which represents my individual section of the larger multi-level prototype developed in collaboration with a six-person engineering team.
-
-
-
-## Key Mechanism Design
-**No-Contact Actuation:** Converts rotational input from an external hand crank into recurring vertical output via a camshaft and follower, providing substantial ball movement per handle turn.
-**Hinged Impact Platform:** Utilizes a rotating cam to push a triangular wooden platform upward from beneath a reference plane, striking and advancing the marble along the track.
-**Design Selection:** Evaluated alternative concepts such as static ridge-and-groove sliding plates, but selected the rotational cam architecture to avoid complex acrylic wall extrusions, floating supports, and poor external accessibility.
-
-
-## Engineering Challenge & Resolution
-**The Problem:** During the first cardboard prototyping phase, our initial automotive-inspired dual-cam and bent-wire follower system exposed critical mechanical limitations. Scaling the interlocked components within the constrained 15 cm × 15 cm footprint proved difficult, the follower was too heavy for the cam to lift reliably, and a lack of axial constraints caused inconsistent vertical motion alongside height-offset calculation issues between the two cams.
-**The Fix:** To resolve these instabilities in Prototype 2, I simplified the architecture to a **single-cam design** anchored directly onto a wooden shaft to eliminate wire slippage. I also mounted the triangular impact platform directly onto a hinged follower—eliminating the need for springs or support wires—and fabricated the layered wood components with a panel saw and handheld buffer, successfully validating smooth vertical displacement.
+**Subsystem Ownership:** This repository documents the **Cam-and-Follower Actuation Sublevel**, representing my dedicated mechanical subsystem within the full multi-level prototype developed in collaboration with a six-person engineering team.
 
 
 
-## Next Steps
-* **Path Optimization:** Refining the triangular platform ridge geometry to prevent interference with the marble's natural rolling pathway.
-* **System Integration:** Designing outer acrylic wall mounting interfaces and coupling this sublevel with neighboring team subsystems (such as an elevator, ramp, or scissor lift) to bridge vertical levels.
+## Mechanical Architecture & Design Rationale
+* **Kinematics & Motion Conversion:** Translates continuous rotational input from an exterior hand crank into recurring vertical actuation via a custom camshaft and follower assembly, maximizing marble displacement per handle revolution.
+* **No-Contact Impact Actuation:** Integrates a hinged, triangular wooden impact platform beneath a reference plane; as the cam rotates, the platform emerges to impart controlled upward and forward momentum to the marble.
+* **Concept Trade-Off Analysis:** Evaluated alternative actuation methods—including static ridge-and-groove sliding plates—before selecting the rotational cam-and-follower architecture to eliminate floating support structures, reduce friction, and avoid complex pass-through extrusions in the outer acrylic enclosure.
+
+
+## Engineering Challenge & Iterative Resolution
+
+### The Problem: Kinematic Instability & Packaging Constraints
+During initial physical testing with a cardboard scale model, an automotive-inspired **staggered dual-cam and bent-wire follower** configuration exposed critical mechanical failure modes:
+* **Packaging & Tolerance Stack-Up:** Interlocked components were difficult to package within the strict 15 cm × 15 cm spatial envelope, and slight height discrepancies between the dual cams created inconsistent displacement profiles.
+* **Excessive Follower Mass & Friction:** The follower assembly was too heavy for the cam profile to lift smoothly under manual crank torque, while a lack of proper axial constraints allowed the follower to twist and bind rather than translate purely vertically.
+* **Torque Slippage:** Relying on a bent wire crankshaft allowed the cams to slip under load rather than transmitting positive rotational torque.
+
+### The Technical Fix: Kinematic Simplification & Direct Coupling
+To eliminate binding, reduce part count, and improve mechanical reliability in **Prototype 2**, I redesigned the mechanism around core Design for Assembly (DFA) principles:
+* **Single-Cam Optimization & Positive Drive:** Eliminated the secondary cam to remove dual-offset tolerance issues and anchored a single, precision-shaped wooden cam directly onto a rigid wooden drive shaft, ensuring positive torque transmission with zero slippage.
+* **Integrated Hinged Follower:** Replaced the separate spring-and-wire follower assembly by mounting the triangular impact plane directly onto a hinged pivot arm, constraining motion to a single controlled degree of freedom and drastically reducing moving mass.
+* **Fabrication & Validation:** Manufactured the layered wood components using a panel saw and hand-profiled the cam lobe with an abrasive buffer, successfully validating smooth, repeatable vertical actuation under manual cranking.
+
+
+
+## Future Engineering Roadmap
+* **Pathway Interference Mitigation:** Refining the ridge geometry of the emerging triangular platform to prevent unintended collision with the marble's natural rolling trajectory.
+* **System-Level Integration:** Designing precision mounting interfaces for the outer acrylic walls and coupling this sublevel's exit path with neighboring team subsystems (vertical lift/scissor mechanism) to enable continuous multi-stage marble progression.
+
 
