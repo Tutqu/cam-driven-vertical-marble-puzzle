@@ -24,12 +24,6 @@ Constrained within a compact **15 cm × 15 cm vertical footprint**, the system c
 
 <img width="797" height="256" alt="image" src="https://github.com/user-attachments/assets/383ef3ee-4cd4-4e90-8298-25d928c8cecc" />
 
-##Prototypes
-<img width="306" height="280" alt="image" src="https://github.com/user-attachments/assets/a9ad0c9b-c4f0-4eb0-b7a6-8cadd80e8af3" />
-<img width="380" height="263" alt="image" src="https://github.com/user-attachments/assets/d616a58f-517f-4be9-93cd-9695bb3aaae5" />
-https://github.com/user-attachments/assets/5a31ac2f-d174-4374-9e30-d1005381dd79
-
-
 
 ## Engineering Challenge & Iterative Resolution
 
@@ -38,6 +32,13 @@ During initial physical testing with a cardboard scale model, an automotive-insp
 * **Packaging & Tolerance Stack-Up:** Interlocked components were difficult to package within the strict 15 cm × 15 cm spatial envelope, and slight height discrepancies between the dual cams created inconsistent displacement profiles.
 * **Excessive Follower Mass & Friction:** The follower assembly was too heavy for the cam profile to lift smoothly under manual crank torque, while a lack of proper axial constraints allowed the follower to twist and bind rather than translate purely vertically.
 * **Torque Slippage:** Relying on a bent wire crankshaft allowed the cams to slip under load rather than transmitting positive rotational torque.
+
+##Prototype
+<img width="306" height="280" alt="image" src="https://github.com/user-attachments/assets/a9ad0c9b-c4f0-4eb0-b7a6-8cadd80e8af3" />
+<img width="380" height="263" alt="image" src="https://github.com/user-attachments/assets/d616a58f-517f-4be9-93cd-9695bb3aaae5" />
+https://github.com/user-attachments/assets/402bacc8-9f29-4f04-95a2-3f5139dd2275
+
+
 
 ### The Technical Fix: Kinematic Simplification & Direct Coupling
 To eliminate binding, reduce part count, and improve mechanical reliability in **Prototype 2**, I redesigned the mechanism around core Design for Assembly (DFA) principles:
